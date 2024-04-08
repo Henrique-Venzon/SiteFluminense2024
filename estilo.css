@@ -1,0 +1,542 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+header{
+    top: 0;
+    width: 100%;
+    background-color: rgb(10, 66, 20);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    position: fixed;
+    z-index: 1000;
+}
+.container-logo{
+    display: flex;
+    align-items: center;
+}
+.texto-logo{
+    margin-right: 0;
+    color: rgb(255, 255, 255);
+    position: absolute;
+}
+.menu li{
+    display: inline-block;
+    margin: 0 10px;
+    margin-right: -10px;
+}
+.menu li a{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+.menu li a:hover{
+    background-color: rgba(182, 182, 182, 0.575);
+}
+h1{
+    color: rgb(255, 255, 255);
+}
+.barra{
+    font-size: 20px;
+    align-items: center;
+    margin-left: 65px;
+    margin-right: 0;
+    background-color: rgb(10, 66, 20);
+    color: white;
+    width: 200px;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 5px;
+}
+.barra::placeholder{
+    color:white
+}
+.busca{
+    font-size: 15px;
+    align-items: center;
+    color: white;
+    background-color: rgb(10, 66, 20);
+    padding: 5px;
+    width: 60px;
+    border: 2px solid white;
+}
+.menu1:hover{
+    scale: 1.1;
+}
+.menu2:hover{
+    scale: 1.1;
+}
+.menu3:hover{
+    scale: 1.1;
+}
+.slider{
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+.slide img{
+    width: 800px;
+}
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: white;
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+.navigation-auto div{
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigation-auto {
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: white;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: white;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: white;
+}
+.image-text {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.238);
+    color: white;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-items: center;
+}
+.centroTxtSlider{
+    position: absolute;
+    top: 10px;
+    left: 25%;
+    width: 50%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-items: center;
+}
+
+.PATROCINIO{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.rodape{
+    background-color:rgb(10, 66, 20);
+    display: flex;
+    justify-content: space-around;
+    border-top: 10px;
+
+}
+.textANDimg{
+    margin: 10px;
+    display: flex;
+    padding: 8px;
+}
+.imgfooter{
+    width:30px;
+    height:30px;
+    margin-right: 8px;
+}
+.textoFooter{
+    font-size: 28px;
+}
+a{
+    text-decoration: none;
+}
+
+.img-pt{
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
+.marca:hover{
+    background-color: rgba(182, 182, 182, 0.575);
+    border-radius: 10px;
+}
+.marca{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.textANDimg:hover{
+    background-color: rgba(182, 182, 182, 0.575);
+    border-radius: 10px;
+
+}
+.pt-txt{
+    font-size: 35px;
+    color: black;
+}
+.textoPT{
+    margin-top: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.CORES{
+    display: block;
+    width: 100%;
+}
+.green{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(10, 66, 20, 0.967);
+}
+.white{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+}
+.red{
+    width: 100%;
+    height: 30px;
+    background-color: #700606f5;
+}
+.div-bv{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+}
+.text-bv{
+    font-size: 80px;
+    align-items: center;
+    display: flex;
+    color: #daa520;
+    z-index: 200;
+    position: absolute;
+    margin-top: -2px;
+    
+}
+.textoPT{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+}
+.text-pt{
+    font-size: 80px;
+    align-items: center;
+    display: flex;
+    color: #daa520;
+    z-index: 200;
+    position: absolute;
+    margin-top: -2px;
+    
+}
+
+.imgMenu{
+    height: 70px;
+    width: 70px;
+}
+
+.Ulprincipal {
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.Liprincipal {
+    display: inline-block;
+}
+.Aprincipal {
+    text-decoration: none;
+    color: black;
+}
+.Ulvertical {
+    list-style: none;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+input[type=checkbox]:checked~nav {
+    transform: translate(-350px);
+}
+nav {
+    border-radius: 0.3em;
+    width: 20em;
+    height: 90dvh;
+    position: absolute;
+    margin-top: 18px;
+    background-color: rgba(82, 82, 82, 0.637);
+    right: -350px;
+    transition: all 1.0s;
+}
+.TituloVertical {
+    cursor:default;
+    color: #ffffff; 
+    font-size: 25px;
+}
+.Avertical {
+    color: rgb(255, 255, 255);
+    padding: 10px 5px;
+      -moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+.Avertical:hover {
+    font-size: 18px;
+    color: #700606f5;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.container-loja{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+.roupa{
+    padding: 18px 18px;
+    border-radius: 15px;
+}
+.roupa img{
+    width: 350px;
+    height: 350px;
+} 
+.container-loja :hover {
+    background-color: #700606;
+}
+.nameCamisa {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.precoCamisa{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 2px 2px;
+    border-radius: 12px;
+    color:#ffffff;
+}
+.MascFeme{
+    justify-content: space-around;
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+}
+.masculino h2{
+    color: #063f0d;
+    padding: 10px 15px;
+    border: 3px solid #063f0d;
+    border-radius: 8px;
+}
+.feminino h2{
+    color: #700606;
+    padding: 10px 15px;
+    border: 3px solid #700606;
+    border-radius: 8px;
+
+}
+.MascFeme :hover{
+    background-color: #daa520;
+}
+.sexo :hover{
+    scale:1.25;
+}
+.entrarText{
+    color: #700606;
+    align-items: center;
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.entrarRegistrar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+}
+.imagemMeio{
+    height: 500px;
+    width: 500px;
+    margin-top: 80px;
+}
+
+label{
+    margin-top: 25px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #daa520;
+    font-size: 25px;
+    margin-top: 25px;
+}
+.caixaRegistrar{
+
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    width: 170px;
+    margin-top: 10px;
+    padding: 50px;
+    border: 3px solid  #700606;
+    border-radius: 65px;
+}
+.caixaEntrar{
+    align-items: center;
+    display: flex;
+    width: 170px;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 50px;
+    border: 3px solid  #063f0d;
+    border-radius: 65px;
+}
+.botaoR{
+    margin-top: 20px;
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #700606;
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+    color: #000000;
+    border-radius: 30px;
+}
+.botaoR:hover{
+    background-color: #f0f0f0ea;
+}
+.botaoV:hover{
+    background-color: #f0f0f0ea;
+}
+.botaoV{
+    margin-top: 20px;
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #063f0d;
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+    color: #000000;
+    border-radius: 30px;
+}
+
+.formLogin {
+    text-align: center;
+}
+.TextVerde{
+    color: #063f0d;
+    align-items: center;
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.labelV{
+    color: #063f0d;
+    margin-bottom: 10px;
+}
+.labelR{
+    color: #700606;
+    margin-bottom: 10px;
+}
+.labelVinput{
+    border: 3px solid #063f0d;
+    color: #000000;
+    border-radius: 12px;
+    padding: 3px;
+}
+.labelRinput{
+    border: 3px solid #700606;
+    color: #000000;
+    border-radius: 12px;
+    padding: 3px;
+
+}
+
