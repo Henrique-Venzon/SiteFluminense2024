@@ -1,54 +1,73 @@
 <!DOCTYPE html>
-
-<html>
-    <head>
-
-        <title>ENTRAR e REGISTRAR</title>
-        <link rel="stylesheet" href="estilo.css">
-        <script src="script.js" defer></script>
-
-    </head>
-    <body>
-  
-        <div class="entrarRegistrar">
-
-        <div class="caixaRegistrar">
-            <div>
-            <form  action="" method="post">
-            <div class="formLogin">
-            <h1 class="entrarText">CADASTRO</h1>
-            <label class="labelR" for="nome1">Nome:</label>
-            <input class="labelRinput" type="text" id="nome1" name="nome1"><br>
-            <label class="labelR" for="email1">Email:</label>
-            <input class="labelRinput" type="email" id="email1" name="email1"><br>
-            <label class="labelR" for="senha1">Senha:</label>
-            <input class="labelRinput" type="password" id="senha1" name="senha1"><br>
-            <input class="botaoR" type="submit" value="REGISTRAR">
+<html lang="pt-br">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">welcome back!</h2>
+                <p class="description description-primary">To keep connected with us</p>
+                <p class="description description-primary">please login with your personal info</p>
+                <button id="signin" class="btn btn-primary">sign in</button>
+            </div>    
+            <div class="second-column">
+                <h2 class="title title-second">create account</h2>
+               
+                <p class="description description-second">or use your email for registration:</p>
+                <form class="form">
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" placeholder="Name">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Password">
+                    </label>
+                    
+                    
+                    <button class="btn btn-second">sign up</button>        
+                </form>
+            </div><!-- second column -->
+        </div><!-- first content -->
+        <div class="content second-content">
+            <div class="first-column">
+                <h2 class="title title-primary">hello, friend!</h2>
+                <p class="description description-primary">Enter your personal details</p>
+                <p class="description description-primary">and start journey with us</p>
+                <button id="signup" class="btn btn-primary">sign up</button>
             </div>
-            </form>
-            </div>
-        </div>
-        <div class="imagemFlu">
-            <img class="imagemMeio" src="img/fluLogo.png">
-        </div>
-        
-        <div class="caixaEntrar">
-            <div >
-            <form action="" method="post">
-            <div class="formLogin">
-            <h1 class="TextVerde">ENTRAR</h1>
-            <label class="labelV" for="nome2">Nome:</label>
-            <input class="labelVinput" type="text" id="nome2" name="nome"><br>
-            <label class="labelV" for="email2">Email:</label>
-            <input class="labelVinput" type="email" id="email2" name="email"><br>
-            <label class="labelV" for="senha2">Senha:</label>
-            <input class="labelVinput" type="password" id="senha2" name="senha"><br>
-            <input class="botaoV" type="submit" value="ENTRAR">
-            </div>
-            </form>
-            </div>
-        </div>
-        </div>
-  
-    </body>
+            <div class="second-column">
+                <h2 class="title title-second">sign in to developer</h2>
+                
+                <p class="description description-second">or use your email account:</p>
+                <form class="form">
+                
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Password">
+                    </label>
+                
+                    <a class="password" href="#">forgot your password?</a>
+                    <button class="btn btn-second">sign in</button>
+                </form>
+            </div><!-- second column -->
+        </div><!-- second-content -->
+    </div>
+    <script src="login.js"></script>
+
+</body>
 </html>
